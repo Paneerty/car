@@ -47,16 +47,20 @@
 <style>
 /* Logo center */
 #logo-center {
-  widh:center
-  weith:center
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  opacity: 0.5;
-  z-index: 1000;
-  pointer-events: none;
+  header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  header img {
+    height: 40px; /* taille logo */
+    margin-right: 10px; /* espace bin logo w title */
+  }
+
+  header h1 {
+    font-size: 24px;
+    margin: 0;
 }
 </style>
 </head>
