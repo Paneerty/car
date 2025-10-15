@@ -380,6 +380,54 @@ window.addEventListener('scroll', () => {
 });
 </script>
 
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <title>معرض سيارات Maserati</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; background: #111; color: white; }
+    #gallery img { max-width: 220px; margin: 10px; border-radius: 12px; box-shadow: 0 0 10px #000; }
+  </style>
+</head>
+<body>
+  <h1>🚘 صور Maserati</h1>
+  <div id="gallery">جاري تحميل الصور...</div>
+
+  <script>
+    const owner = "OWNER"; paneerty// 🔁 بدّل باسم حسابك GitHub
+    const repo  = "REPO";  -star-pro-car// 🔁 بدّل باسم المشروع
+    const path  = "assets/images/mazerati"; // 📂 المجلد اللي فيه الصور
+
+    const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
+
+    fetch(apiUrl)
+      .then(r => {
+        if (!r.ok) throw new Error("GitHub API error " + r.status);
+        return r.json();
+      })
+      .then(files => {
+        const gallery = document.getElementById("gallery");
+        gallery.innerHTML = "";
+        files
+          .filter(f => /\.(jpe?g|png|gif|webp|svg)$/i.test(f.name))
+          .forEach(f => {
+            const img = document.createElement("img");
+            img.src = f.download_url;
+            img.alt = f.name;
+            img.loading = "lazy";
+            gallery.appendChild(img);
+          });
+        if (!gallery.children.length) gallery.textContent = "ما فماش صور في المجلد.";
+      })
+      .catch(err => {
+        document.getElementById("gallery").textContent = "خطأ: " + err.message;
+        console.error(err);
+      });
+  </script>
+</body>
+</html>
+  
+
 </body>
   </html>
         
