@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Réservation - GS 4C</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="assets/logo-gs4c.png" class="logo">
+  <h1>Réservation</h1>
+</header>
+
+<form class="reservation-form">
+  <input type="text" placeholder="Nom complet" required>
+  <input type="tel" placeholder="Téléphone" required>
+
+  <select>
+    <option>Peinture automobile</option>
+    <option>Lustrage</option>
+    <option>Peinture des jantes</option>
+    <option>Carrosserie métallique</option>
+  </select>
+
+  <input type="date" required>
+  <textarea placeholder="Détails du véhicule"></textarea>
+
+  <button type="button" onclick="sendWhatsApp()">Envoyer la demande</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
