@@ -131,10 +131,6 @@ header {
 }
 
 .btn {
-  background: linear-gradient(
-  to bottom,
-  rgba(0,40,80,0.7),
-  rgba(0,40,80,0.3)
   display: block;
   margin: 15px;
   padding: 14px;
