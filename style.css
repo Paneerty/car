@@ -57,7 +57,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
   gap: 15px;
-  padding: 15px;
+  padding: 10px;
 }
 
 .gallery img {
@@ -78,7 +78,7 @@ header {
 
 .compare img {
   width: 50%;
-  border-radius: 10px;
+  border-radius: 70px;
 }
 
 .map {
