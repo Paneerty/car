@@ -65,9 +65,9 @@ header {
 }
 
 .gallery img {
-  width: 50%;
+  width: 100%;
   border-radius: 30px;
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -79,7 +79,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .compare img {
@@ -91,7 +91,7 @@ header {
 }
 
 .map {
-  padding: 15px;
+  padding: 5px;
 }
 
 .map iframe {
@@ -103,20 +103,20 @@ header {
 }
 
 .tarifs {
-  padding: 15px;
+  padding: 5px;
   display: grid;
   gap: 12px;
 }
 
 .tarifs div {
   background: #181818;
-  padding: 15px;
+  padding: 5px;
   border-radius: 12px;
   border: 1px solid #333;
 }
 
 .reservation-form {
-  padding: 15px;
+  padding: 5px;
   display: grid;
   gap: 10px;
 }
@@ -124,7 +124,7 @@ header {
 .reservation-form input,
 .reservation-form select,
 .reservation-form textarea {
-  padding: 12px;
+  padding: 5px;
   background: #111;
   border: 1px solid #333;
   color: white;
@@ -132,7 +132,7 @@ header {
 }
 
 .reservation-form button {
-  padding: 14px;
+  padding: 5px;
   background: #128C7E;
   border: none;
   border-radius: 10px;
@@ -168,7 +168,7 @@ header {
 .social.facebook {
   display: block;
   margin: 15px;
-  padding: 12px;
+  padding: 5px;
   background: #1877F2;
   color: white;
   text-align: center;
