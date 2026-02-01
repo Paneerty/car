@@ -14,7 +14,7 @@ header {
   display: flex;
   gap: 12px;
   padding: 12px;
-  background: #151515;
+  background: linear-gradient(to right, #111, #2b2b2b);
   border-bottom: 1px solid #333;
 }
 
