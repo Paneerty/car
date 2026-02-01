@@ -12,6 +12,7 @@ body {
 /* ====== الرأس ====== */
 header {
   display: flex;
+  width: 100%
   gap: 12px;
   padding: 12px;
   background: linear-gradient(to right, #111, #2b2b2b);
